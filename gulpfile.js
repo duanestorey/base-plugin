@@ -1,3 +1,5 @@
+var maxImageWidth = 1024;
+
 var jsLibFiles = [ 
 	'./assets/lib/**/*.js' 
 ];
@@ -42,10 +44,12 @@ const replace = require( 'gulp-replace' );
 const timestamp = require( 'unix-timestamp' );
 const hash = require( 'gulp-hash-creator' );
 const eslint = require( 'gulp-eslint' );
+const resize = require( 'gulp-image-resize' );
  
 gulp.task( 'image', function() {
 	var result =  
 		gulp.src( allowableImages )
+		.pipe( resize( { width: maxImageWidth } ) )
    		.pipe( image() )
 		.pipe( gulp.dest( './dist/images' ) );
 
