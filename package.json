@@ -1,0 +1,27 @@
+{
+  "name": "base-plugin",
+  "version": "1.0.0",
+  "description": "WordPress Base Plugin, Complete With Tooling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duanestorey/base-plugin.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "gulp"
+  ],
+  "author": "Duane Storey",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/duanestorey/base-plugin/issues"
+  },
+  "homepage": "https://github.com/duanestorey/base-plugin#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
