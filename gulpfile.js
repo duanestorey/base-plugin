@@ -50,7 +50,10 @@ gulp.task( 'image', function() {
 	var result =  
 		gulp.src( allowableImages )
 		.pipe( resize( { width: maxImageWidth } ) )
-   		.pipe( image() )
+   		.pipe( image( [
+			image.jpegtran({progressive: true}),
+		]
+		) )
 		.pipe( gulp.dest( './dist/images' ) );
 
 	result = result ||  

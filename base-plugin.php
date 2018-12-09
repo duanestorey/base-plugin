@@ -9,3 +9,11 @@ Author URI: https://duanestorey.com
 Text Domain: base-plugin
 Domain Path: /lang
 */
+
+namespace My_Awesome_Plugin;
+
+function load_base_plugin {
+
+}
+
+add_action( 'plugins_loaded', 'load_base_plugin' );
